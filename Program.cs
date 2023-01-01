@@ -42,5 +42,10 @@ public class Program
             }
             Console.WriteLine(reversedString);
         }
+
+        else if (usrChoice == 2)
+        {
+            Console.WriteLine(usrString.ToUpper());
+        }
     }
 }
