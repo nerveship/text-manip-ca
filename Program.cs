@@ -14,10 +14,22 @@ public class Program
 
         int usrChoice = Convert.ToInt32(Console.ReadLine());
         
+        //makes sure the input is within 1 - Maximum choice
         while (usrChoice > choiceMax || usrChoice < 1)
         {
             Console.WriteLine($"Please choose a number between 1 and {choiceMax}");
             usrChoice = Convert.ToInt32(Console.ReadLine());
+        }
+
+        Console.WriteLine("Please input the text you would like to modify");
+        string usrString = Console.ReadLine();
+
+        //Initialises array of string for later use
+        char[] charArray = usrString.ToCharArray();
+
+        if (usrChoice == 1)
+        {
+
         }
     }
 }
