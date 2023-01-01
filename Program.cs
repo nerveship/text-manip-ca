@@ -47,5 +47,10 @@ public class Program
         {
             Console.WriteLine(usrString.ToUpper());
         }
+
+        else if (usrChoice == 3)
+        {
+            Console.WriteLine(usrString.ToLower());
+        }
     }
 }
