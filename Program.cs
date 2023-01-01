@@ -21,15 +21,16 @@ public class Program
             usrChoice = Convert.ToInt32(Console.ReadLine());
         }
 
-        Console.WriteLine("Please input the text you would like to modify");
+        Console.WriteLine("Please input the text you would like to modify.\n");
         string usrString = Console.ReadLine();
 
         //Initialises array of string for later use
         char[] charArray = usrString.ToCharArray();
 
-        if (usrChoice == 1)
+        if (usrString == "")
         {
-
+            Console.WriteLine("Invalid input, please enter something next time.\n");
+            return;
         }
     }
 }
