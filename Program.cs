@@ -24,13 +24,23 @@ public class Program
         Console.WriteLine("Please input the text you would like to modify.\n");
         string usrString = Console.ReadLine();
 
-        //Initialises array of string for later use
+        //Initialises array of user input + an empty string for later use
         char[] charArray = usrString.ToCharArray();
+        string reversedString = String.Empty;
 
         if (usrString == "")
         {
             Console.WriteLine("Invalid input, please enter something next time.\n");
             return;
+        }
+
+        if (usrChoice == 1)
+        {
+            for (int i = charArray.Length - 1; i > -1; i--)
+            {
+                reversedString += charArray[i];
+            }
+            Console.WriteLine(reversedString);
         }
     }
 }
