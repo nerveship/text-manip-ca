@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 public class Program
 {
@@ -51,6 +52,12 @@ public class Program
         else if (usrChoice == 3)
         {
             Console.WriteLine(usrString.ToLower());
+        }
+
+        else
+        {
+            string trim = Regex.Replace(usrString, @"\s", "");
+            Console.WriteLine(trim);
         }
     }
 }
